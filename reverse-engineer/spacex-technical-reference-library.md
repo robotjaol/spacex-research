@@ -44,7 +44,7 @@ Mulai dari SX01–SX02 untuk antarmuka Falcon, SX05 dan SX27 untuk kendaraan Sta
 - **Status akses:** Respons PDF dan isi dokumen berhasil dibuka pada pemeriksaan.
 - **Rekaman/halaman pendamping:** [Buka sumber](https://www.spacex.com/rideshare/)
 
-### SX03. NASA Independent Review Team: SpaceX CRS-7 Accident Investigation Report — Public Summary
+### SX03. NASA Independent Review Team: SpaceX CRS-7 Accident Investigation Report - Public Summary
 
 - **PDF:** [Unduh PDF](https://www.nasa.gov/sites/default/files/atoms/files/public_summary_nasa_irt_spacex_crs-7_final.pdf)
 - **Penerbit/institusi:** NASA
