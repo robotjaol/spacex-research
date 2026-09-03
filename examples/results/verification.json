@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-09-03",
+  "package_install": "offline editable install succeeded in isolated venv with existing dependencies",
+  "cli_run": "all five completed through installed entry point",
+  "notebook": "all code cells executed successfully; no interactive frontend test",
+  "elapsed_s": 13.82792197300023,
+  "max_child_rss_kib": 132932,
+  "numerical_tests": "13 tests passed; analytic, geometric and failure cases",
+  "remote_ci": "Consult GitHub Actions; local testing does not establish remote CI status",
+  "structural_check": "51 sources,22 project plans and164 local links passed before publication-status edits",
+  "remote_publication": "Initial write rejected HTTP403; no commit or remote CI"
+}

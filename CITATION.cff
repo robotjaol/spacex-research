@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, cite the repository version and the original scientific sources."
+title: "SpaceX Engineering Research"
+type: software
+authors:
+  - family-names: "Frizzy"
+    given-names: "Jonathan Oktaviano"
+version: 0.1.0
+license: MIT
+abstract: "Independent public aerospace research and reproducible educational simulations; unaffiliated with SpaceX."
+keywords:
+  - aerospace
+  - simulation
+  - reproducible-research
+  - control-systems
+repository-code: "https://github.com/robotjaol/spacex-research"
+url: "https://github.com/robotjaol/spacex-research"

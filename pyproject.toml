@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacex-engineering-research"
+version = "0.1.0"
+description = "Independent public aerospace research and reproducible educational experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Jonathan Oktaviano Frizzy"}]
+dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
+
+[project.scripts]
+aero-lab = "aerolab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

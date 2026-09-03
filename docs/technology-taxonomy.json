@@ -1,0 +1,350 @@
+[
+  {
+    "id": "launch-vehicles",
+    "title": "Launch vehicles",
+    "subtopics": [
+      "Falcon 9",
+      "Falcon Heavy",
+      "Starship",
+      "Super Heavy",
+      "staging",
+      "payload interfaces",
+      "reusability"
+    ],
+    "source_ids": [
+      "P01",
+      "P03",
+      "P11"
+    ],
+    "project_ids": [
+      "L01",
+      "L06",
+      "L18",
+      "L22"
+    ],
+    "learning_principle": "Use dated configurations and interfaces as system context. Keep measured flight events separate from proposed operating envelopes.",
+    "evidence_boundary": "No universal current vehicle model is established. Vehicle counts, masses and geometry must be tied to a dated source and mission."
+  },
+  {
+    "id": "propulsion",
+    "title": "Propulsion",
+    "subtopics": [
+      "Merlin",
+      "Raptor",
+      "LOX/RP-1",
+      "methane/LOX",
+      "gas-generator cycle",
+      "full-flow staged combustion",
+      "engine control concepts",
+      "thrust vector control",
+      "propellant management",
+      "cryogenic systems"
+    ],
+    "source_ids": [
+      "P01",
+      "P02",
+      "A05",
+      "A06"
+    ],
+    "project_ids": [
+      "L08",
+      "L09",
+      "L11",
+      "L21"
+    ],
+    "learning_principle": "Separate cycle topology, equilibrium chemistry, component performance and transient control. They answer different questions.",
+    "evidence_boundary": "No validated Raptor turbomachinery maps, cooling passages or operational control gains are available in this evidence set."
+  },
+  {
+    "id": "gnc",
+    "title": "Guidance, navigation and control",
+    "subtopics": [
+      "launch dynamics",
+      "trajectory optimization",
+      "state estimation",
+      "Kalman filtering",
+      "sensor fusion",
+      "attitude determination",
+      "attitude control",
+      "TVC",
+      "MPC",
+      "optimal control",
+      "fault-tolerant control"
+    ],
+    "source_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "P01"
+    ],
+    "project_ids": [
+      "L01",
+      "L02",
+      "L06",
+      "L07",
+      "L11"
+    ],
+    "learning_principle": "Build verified state propagation and estimation before optimization. Frames, sample times and actuator limits are part of the model.",
+    "evidence_boundary": "Academic algorithms are not evidence of SpaceX implementation; modern optimal-control labels require actual constrained solver code."
+  },
+  {
+    "id": "autonomous-landing",
+    "title": "Autonomous landing",
+    "subtopics": [
+      "boostback",
+      "entry burn",
+      "landing burn",
+      "drone-ship landing concepts",
+      "trajectory prediction",
+      "aerodynamic control",
+      "landing optimization"
+    ],
+    "source_ids": [
+      "P01",
+      "P02",
+      "A01",
+      "A02"
+    ],
+    "project_ids": [
+      "L01",
+      "L07",
+      "L10",
+      "L12"
+    ],
+    "learning_principle": "Treat descent phases and moving-platform targets as separate model extensions. The implemented baseline resolves only vertical feedback and contact.",
+    "evidence_boundary": "No calibrated wind, deck motion, grid-fin database, landing-leg dynamics or ignition envelope is reconstructed."
+  },
+  {
+    "id": "flight-software",
+    "title": "Flight software",
+    "subtopics": [
+      "real-time architecture",
+      "fault tolerance",
+      "redundancy",
+      "state machines",
+      "telemetry",
+      "embedded software",
+      "Linux-based systems",
+      "C/C++",
+      "simulation frameworks"
+    ],
+    "source_ids": [
+      "P01",
+      "A08",
+      "S03",
+      "S14"
+    ],
+    "project_ids": [
+      "L05",
+      "L17",
+      "L18"
+    ],
+    "learning_principle": "Study components, explicit failure states and timing contracts using public frameworks and original tests.",
+    "evidence_boundary": "Linux/C++ are ecosystem study topics here; no verified internal SpaceX operating-system or codebase inventory was obtained."
+  },
+  {
+    "id": "avionics",
+    "title": "Avionics",
+    "subtopics": [
+      "flight computers",
+      "IMUs",
+      "GNSS",
+      "navigation sensors",
+      "power electronics",
+      "communication buses",
+      "distributed avionics",
+      "redundant computing"
+    ],
+    "source_ids": [
+      "P01",
+      "A03",
+      "A12"
+    ],
+    "project_ids": [
+      "L02",
+      "L05",
+      "L18"
+    ],
+    "learning_principle": "Separate sensor error, estimator behavior, communication failures and voter failure assumptions.",
+    "evidence_boundary": "The software voter has no hardware certification and does not model radiation or exact vehicle bus protocols."
+  },
+  {
+    "id": "starship-systems",
+    "title": "Starship systems",
+    "subtopics": [
+      "flaps",
+      "aerodynamic control surfaces",
+      "reentry",
+      "thermal protection",
+      "reusable dynamics",
+      "propellant transfer",
+      "orbital refueling"
+    ],
+    "source_ids": [
+      "P03",
+      "P11",
+      "A07"
+    ],
+    "project_ids": [
+      "L04",
+      "L10",
+      "L12",
+      "L21"
+    ],
+    "learning_principle": "Version test events carefully. Internal fluid transfer and inter-vehicle refueling have different evidence requirements.",
+    "evidence_boundary": "No validated flap coefficients, thermal tiles property tables or full refueling model are supplied."
+  },
+  {
+    "id": "structures",
+    "title": "Structures and materials",
+    "subtopics": [
+      "stainless steel",
+      "composites",
+      "cryogenic tanks",
+      "structural optimization",
+      "FEA",
+      "buckling",
+      "thermal stress"
+    ],
+    "source_ids": [
+      "P01",
+      "P03",
+      "A10"
+    ],
+    "project_ids": [
+      "L13",
+      "L20"
+    ],
+    "learning_principle": "Begin with analytic beam/plate benchmarks, then add geometric and temperature-dependent complexity.",
+    "evidence_boundary": "An attractive CAD assembly or converged mesh does not establish structural margins or flight qualification."
+  },
+  {
+    "id": "aerodynamics",
+    "title": "Aerodynamics",
+    "subtopics": [
+      "CFD",
+      "supersonic flow",
+      "hypersonic flow",
+      "reentry aerodynamics",
+      "drag modeling",
+      "stability",
+      "grid fins"
+    ],
+    "source_ids": [
+      "A09",
+      "S08",
+      "S13",
+      "S18"
+    ],
+    "project_ids": [
+      "L10",
+      "L12"
+    ],
+    "learning_principle": "Match the solver to its physical regime. Panel models, low-speed CFD and reacting hypersonic solvers have different assumptions.",
+    "evidence_boundary": "The current experiments do not implement CFD. Full-scale hypersonic validation is beyond the laptop baseline."
+  },
+  {
+    "id": "manufacturing",
+    "title": "Manufacturing",
+    "subtopics": [
+      "additive manufacturing",
+      "metal forming",
+      "large-scale welding",
+      "robotic manufacturing",
+      "rapid prototyping",
+      "design for manufacturability"
+    ],
+    "source_ids": [
+      "P12",
+      "P03",
+      "A10"
+    ],
+    "project_ids": [
+      "L13",
+      "L20"
+    ],
+    "learning_principle": "Use the confirmed printed-chamber example as a verification case, then study generic tolerances with original geometry.",
+    "evidence_boundary": "Robotic welding and process recipes are taxonomy topics, not confirmed details in this source set; no production parameters are inferred."
+  },
+  {
+    "id": "testing",
+    "title": "Testing and validation",
+    "subtopics": [
+      "static fire",
+      "HIL",
+      "SIL",
+      "Monte Carlo",
+      "fault injection",
+      "system identification",
+      "model validation"
+    ],
+    "source_ids": [
+      "P01",
+      "P12",
+      "A08"
+    ],
+    "project_ids": [
+      "L01",
+      "L02",
+      "L05",
+      "L14"
+    ],
+    "learning_principle": "Distinguish code execution, analytic agreement, integration testing and physical validation. Keep failed trials and define denominators.",
+    "evidence_boundary": "The delivered evidence consists of software simulations and numerical checks, with no physical aerospace hardware test."
+  },
+  {
+    "id": "starlink",
+    "title": "Starlink",
+    "subtopics": [
+      "constellations",
+      "orbital mechanics",
+      "inter-satellite links",
+      "phased arrays",
+      "networking",
+      "routing",
+      "constellation optimization",
+      "ground stations"
+    ],
+    "source_ids": [
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "A04",
+      "A11"
+    ],
+    "project_ids": [
+      "L03",
+      "L15",
+      "L19"
+    ],
+    "learning_principle": "Connect orbit geometry to visibility, then link scheduling and packet behavior. Regulatory authorization is a separate layer.",
+    "evidence_boundary": "Synthetic geometry is not current deployed fleet data or an internet service-quality estimate."
+  },
+  {
+    "id": "mission-engineering",
+    "title": "Mission engineering",
+    "subtopics": [
+      "orbital mechanics",
+      "launch windows",
+      "transfer orbits",
+      "rendezvous",
+      "payload deployment",
+      "mission optimization"
+    ],
+    "source_ids": [
+      "P01",
+      "P13",
+      "A11",
+      "D01"
+    ],
+    "project_ids": [
+      "L03",
+      "L06",
+      "L16",
+      "L22"
+    ],
+    "learning_principle": "Specify epoch, frames, objectives and constraints before comparing propagation or mission tools.",
+    "evidence_boundary": "The educational mission models do not establish executable flight plans, range clearance or collision-screening results."
+  }
+]

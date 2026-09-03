@@ -1,0 +1,25 @@
+{
+  "description": "Independent aerospace research connecting public SpaceX sources to reproducible Python simulations, engineering models, and laptop-only projects.",
+  "topics": [
+    "aerospace",
+    "spacex",
+    "engineering",
+    "research",
+    "simulation",
+    "python",
+    "gnc",
+    "control-systems",
+    "kalman-filter",
+    "orbital-mechanics",
+    "starlink",
+    "thermodynamics",
+    "avionics",
+    "open-science",
+    "reproducible-research",
+    "numerical-methods",
+    "education"
+  ],
+  "publication_status": "Blocked: GitHub create-file request returned403 Resource not accessible by integration. No commit or push succeeded.",
+  "repository_name": "spacex-research",
+  "repository_url": "https://github.com/robotjaol/spacex-research"
+}

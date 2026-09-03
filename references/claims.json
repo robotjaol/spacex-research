@@ -1,0 +1,179 @@
+[
+  {
+    "id": "C01",
+    "claim": "Describes Merlin LOX/RP-1 gas-generator propulsion, aluminum-lithium tank skins, fault-tolerant avionics, payload interfaces and verification requirements.",
+    "source_ids": [
+      "P01"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "A customer guide does not release internal source code, complete CAD, or flight-qualified model parameters.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C02",
+    "claim": "The 17 March 2015 testimony describes Raptor as LOX/methane with a full-flow staged-combustion cycle.",
+    "source_ids": [
+      "P02"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Historical architecture statement; future-facing performance claims are not current measured specifications.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C03",
+    "claim": "The assessed vehicles are primarily stainless steel, and thermal tiles primarily silica.",
+    "source_ids": [
+      "P03"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "An assessed configuration envelope is not a specific flown vehicle; no certified material-property tables are supplied.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C04",
+    "claim": "The FAA index links assessments and decisions for cadence, trajectories and contingency reentry.",
+    "source_ids": [
+      "P04"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Environmental review does not establish a specific flight license or demonstrated performance.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C05",
+    "claim": "The final EIS evaluates up to 44 annual launches with associated infrastructure scenarios.",
+    "source_ids": [
+      "P05"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Assessed capacity is not demonstrated cadence; no vehicle license follows automatically.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C06",
+    "claim": "NASA describes collaboration with SpaceX on a tiled PICA-derived Dragon heat shield and Ames arc-jet qualification.",
+    "source_ids": [
+      "P06"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Does not publish PICA-X formulation or a complete material-property dataset.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C07",
+    "claim": "Discloses antenna-module packaging involving an antenna element, cavity, PCB coupling and amplifier arrangement.",
+    "source_ids": [
+      "P07"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Disclosure does not prove use in a product. Legal-status summaries are not a freedom-to-operate analysis.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C08",
+    "claim": "The 9 January 2026 order authorizes a second tranche of 7,500 Gen2 satellites, totaling 15,000 authorized Gen2 satellites, subject to conditions.",
+    "source_ids": [
+      "P08"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Authorized count is not deployed or operational count; later orders may supersede conditions.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C09",
+    "claim": "Describes user phased arrays, gateway antennas and laser terminals, with brightness-mitigation design tradeoffs.",
+    "source_ids": [
+      "P09"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Manufacturer disclosure is not independent effectiveness validation or a current V3 specification.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C10",
+    "claim": "The retrieved Mini sheet specifies an electronic phased array, 110-degree field of view and 25–40 W average consumption.",
+    "source_ids": [
+      "P10"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Mini-specific specification, not a satellite antenna design or an internal schematic.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C11",
+    "claim": "The 14 March 2024 Flight 3 account identifies hot staging and an internal-tank cryogenic transfer demonstration.",
+    "source_ids": [
+      "P11"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Internal transfer is not ship-to-ship refueling; preliminary test events do not supply calibrated fluid coefficients.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C12",
+    "claim": "NASA states that SuperDraco combustion chambers in the May 2015 pad-abort demonstration were 3D printed.",
+    "source_ids": [
+      "P12"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "Does not establish that every engine component is printed or disclose manufacturing process settings.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C13",
+    "claim": "Demo-1 included autonomous ISS docking with approach and retreat maneuvers.",
+    "source_ids": [
+      "P13"
+    ],
+    "evidence_class": "confirmed public information",
+    "scope": "No docking control law, perception code, or complete test telemetry is released.",
+    "confidence": "high within the cited document",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C14",
+    "claim": "A sampled vertical PD model can demonstrate a numerical contact case under chosen parameters.",
+    "source_ids": [
+      "L01"
+    ],
+    "evidence_class": "educational approximation",
+    "scope": "Own code, synthetic inputs and checked equations; not physical validation.",
+    "confidence": "tested within stated scenario",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C15",
+    "claim": "A simulation workbench should precede a digital-twin claim until real-asset synchronization exists.",
+    "source_ids": [
+      "L18"
+    ],
+    "evidence_class": "engineering inference",
+    "scope": "Maintainer terminology and evidence judgment.",
+    "confidence": "recommendation",
+    "reviewed_at": "2026-09-03"
+  },
+  {
+    "id": "C16",
+    "claim": "Published optimal-control methods can be reconstructed as a separate academic study.",
+    "source_ids": [
+      "A01",
+      "A02"
+    ],
+    "evidence_class": "academic reconstruction",
+    "scope": "Implementation planned; published formulation is not SpaceX flight software.",
+    "confidence": "high for method, unimplemented here",
+    "reviewed_at": "2026-09-03"
+  }
+]

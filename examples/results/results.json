@@ -1,0 +1,91 @@
+{
+  "version": "0.1.0",
+  "seed": 7,
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "evidence_class": "educational approximation; synthetic inputs",
+  "projects": {
+    "landing": {
+      "parameters": {
+        "height_m": 100.0,
+        "velocity_mps": -10.0,
+        "gravity_mps2": 9.80665,
+        "max_thrust_accel_mps2": 18.0,
+        "kp_per_s2": 0.12,
+        "kd_per_s": 0.7,
+        "target_height_m": -0.5,
+        "dt_s": 0.02,
+        "horizon_s": 90.0
+      },
+      "contact": true,
+      "time_s": 21.087544761209646,
+      "contact_velocity_mps": -0.14493836647281444,
+      "unpowered_baseline": {
+        "contact": true,
+        "time_s": 3.6099863060365074,
+        "contact_velocity_mps": -45.40187220809307
+      },
+      "sampled_success_count": 50,
+      "sampled_trial_count": 50,
+      "success_definition": "contact within 90 s and abs(contact velocity) < 1 m/s",
+      "dt_halving_contact_speed_difference_mps": 0.0003196512430613252,
+      "scope": "Constant mass; ideal actuator; no drag, fuel, attitude, or sensor noise"
+    },
+    "navigation": {
+      "trial_count": 30,
+      "mean_filter_rmse_m": 1.0522049007036236,
+      "mean_measurement_rmse_m": 4.974845106765991,
+      "evaluation_mask": "t >= 10 s and observation available; same timestamps for both errors",
+      "single_run_outage_rmse_m": 2.152461483588071,
+      "scope": "Matched synthetic process/noise model; no IMU bias or real GNSS data"
+    },
+    "orbit": {
+      "period_s": 5730.137566531624,
+      "max_relative_energy_drift": 2.980455882095612e-10,
+      "max_relative_angular_momentum_drift": 1.490227941047806e-10,
+      "max_analytic_position_error_m": 0.0040332223279146385,
+      "sampled_visibility_fraction": 0.2665274878218511,
+      "station_deg": [
+        -7.25,
+        112.75
+      ],
+      "constellation": "6 planes x 12 satellites; 550 km; inclination 53 deg",
+      "scope": "Synthetic constellation, simplified frames; visibility does not imply Starlink service"
+    },
+    "thermal": {
+      "max_analytic_error_k": 2.1497612578968983e-09,
+      "stored_energy_j": 988378.7314833001,
+      "integrated_heat_j": 988378.7611584051,
+      "relative_energy_balance_error": 3.002402222884414e-08,
+      "final_temperature_k": 94.9418936574165,
+      "scope": "Constant effective thermal capacity and conductance; no actual tank or fluid properties"
+    },
+    "avionics": {
+      "samples": 600,
+      "safe_samples": 250,
+      "safe_estimates_are_unavailable": true,
+      "fault_schedule_s": {
+        "one_biased_sensor": [
+          15,
+          30
+        ],
+        "three_disagreeing": [
+          30,
+          40
+        ],
+        "manual_reset": 45,
+        "missing_sensor": [
+          50,
+          55
+        ]
+      },
+      "scope": "Scripted software experiment; no scheduling, radiation, bus, or hardware validation"
+    }
+  },
+  "wall_time_s": 9.801215405000221
+}
