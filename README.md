@@ -18,10 +18,6 @@ Public launch-system information is scattered across user guides, regulatory fil
 
 The current state is a research baseline, version 0.1.0. Five experiments execute locally; the advanced catalogue is planned work. No production-readiness, flight-certification, adoption or performance claims are implied by this version.
 
-## Publication status
-
-The source package is prepared for [robotjaol/spacex-research](https://github.com/robotjaol/spacex-research), but the initial write was rejected by GitHub with HTTP403. No commit or push succeeded. Use the downloaded package until write access is restored; see [publication status](docs/github-publication.md).
-
 ## Quick start
 
 Requires Python 3.11 or newer. The recorded environment uses Python 3.12.13, NumPy 2.3.5, SciPy 1.17.0 and Matplotlib 3.10.8 on Linux. No GPU or aerospace hardware is needed. Internet access is needed to obtain dependencies; the experiments themselves run offline.
